@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmDialogs.Tests", "MvvmDialogs.Tests\MvvmDialogs.Tests.csproj", "{119AFE4F-034D-4B95-A2CB-04CE9478E689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmDialogs.Demo", "MvvmDialogs.Demo\MvvmDialogs.Demo.csproj", "{93944599-BB22-4A8E-A053-5CBB3E5947AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmDialogs", "MvvmDialogs\MvvmDialogs.csproj", "{7BE06C50-5544-455F-886D-95322B468E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{119AFE4F-034D-4B95-A2CB-04CE9478E689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119AFE4F-034D-4B95-A2CB-04CE9478E689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119AFE4F-034D-4B95-A2CB-04CE9478E689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119AFE4F-034D-4B95-A2CB-04CE9478E689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93944599-BB22-4A8E-A053-5CBB3E5947AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93944599-BB22-4A8E-A053-5CBB3E5947AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93944599-BB22-4A8E-A053-5CBB3E5947AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93944599-BB22-4A8E-A053-5CBB3E5947AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE06C50-5544-455F-886D-95322B468E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE06C50-5544-455F-886D-95322B468E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE06C50-5544-455F-886D-95322B468E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE06C50-5544-455F-886D-95322B468E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

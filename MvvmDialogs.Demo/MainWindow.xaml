@@ -1,0 +1,39 @@
+﻿<Window x:Class="MvvmDialogs.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MVVM Dialog Box Demo" Height="350" Width="525"
+		xmlns:dlgs="clr-namespace:MvvmDialogs.Behaviors;assembly=MvvmDialogs"
+		dlgs:DialogBehavior.DialogViewModels="{Binding Dialogs}"
+		x:Name="mainWindow"
+		DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+
+	<DockPanel>
+		
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="Window">
+				<MenuItem Header="Close All" Command="{Binding CloseAllCommand}" />
+			</MenuItem>
+		</Menu>
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="100*" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="100*" />
+			</Grid.RowDefinitions>
+
+			<TextBlock Text="{Binding Dialogs.Count, StringFormat='There are {0} dialog boxes open.'}" Grid.Row="0" TextAlignment="Center" Margin="10" />
+			<Button Content="New Modal Dialog" Command="{Binding NewModalDialogCommand}" Grid.Row="2" HorizontalAlignment="Center" Margin="10" />
+			<Button Content="New Modeless Dialog" Command="{Binding NewModelessDialogCommand}" Grid.Row="3" HorizontalAlignment="Center" Margin="10" />
+			<Button Content="New Minimal Dialog" Command="{Binding NewMinimalDialogCommand}" Grid.Row="4" HorizontalAlignment="Center" Margin="10" />
+			<Button Content="New Message Box" Command="{Binding NewMessageBoxCommand}" Grid.Row="5" HorizontalAlignment="Center" Margin="10" />
+			<Button Content="New OpenFile Dialog" Command="{Binding NewOpenFileDialogCommand}" Grid.Row="6" HorizontalAlignment="Center" Margin="10" />
+		</Grid>
+		
+	</DockPanel>
+</Window>
